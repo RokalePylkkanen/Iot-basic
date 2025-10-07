@@ -1,3 +1,8 @@
+# Pico 2 W kytkettynä Joy-it pico protoilulautaan.
+# Ohjelma soittaa protolevyn kiinteällä buzzerilla (GP27) RitariÄssä tunnarin alkua. 
+# Testasin koodia myöhemmin WOKWI simulaatorilla, mutta siinä ympäristössä EI oikein kuulostanut hyvältä.
+# Joy-it laudalla toimii erittäin hyvin! Pitää testaa vielä jollain muulla buzzerilla.
+
 from machine import Pin, PWM
 from utime import sleep
 

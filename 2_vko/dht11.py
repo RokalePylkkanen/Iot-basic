@@ -1,7 +1,9 @@
-#Koodi Wi-fi yhteyden testaamiseen:
+# fyysinen pico 2 w kytkettynä joy-it pico protoilulautaan, jossa kiinteä DHT11 anturi pinnissä GP0.
+# Käytin kännykän mobiilitukiasemaa yhteyden muodostamisessa ThingSpeakiin, minne syötetään omiin fieldeihin lämpötila ja ilmankosteus.
+# Erilliseen secretshit.py tiedostoon tallennettu wifi salasana ja ThingSpeak API avain.
 
 
-import secretshit
+import secretshit     # Erillisessä tiedostossa arkaluontoiset asiat
 
 import network       # For Wi-Fi connectivity
 
@@ -63,7 +65,7 @@ print("IP address:", wlan.ifconfig()[0])  # Display the assigned IP address
 
 
 
-# Initialize the DHT22 sensor on GPIO pin 15
+# Initialize the DHT11 sensor on GPIO pin 15
 
 sensor = dht.DHT11(Pin(0))
 
