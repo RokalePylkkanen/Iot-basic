@@ -69,4 +69,5 @@ try:
 except KeyboardInterrupt:
     buzzer.duty_u16(0)
     buzzer.deinit()
+    Pin(27, Pin.OUT).value(0)  # pakotetaan LOW
 

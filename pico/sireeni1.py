@@ -1,5 +1,5 @@
 # Pico 2 W kytkettynä Joy-it pico protoilu lautaan. Buzzer GP27.
-# Hälytys sireeni, jonka parametreja helppo muutta aloitusarvoissa.
+# Hälytyssireeni, jonka parametreja helppo muutta aloitusarvoissa.
 
 from machine import Pin, PWM
 from utime import sleep_ms
